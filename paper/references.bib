@@ -61,11 +61,13 @@
 @article{lee2024,
   author  = {M. Lee},
   title   = {Emergence of Self-Identity in {AI}: A Mathematical Framework},
-  journal = {MDPI Information},
+  journal = {Axioms},
   volume  = {14},
   number  = {1},
   pages   = {44},
-  year    = {2024}
+  year    = {2025},
+  publisher = {MDPI},
+  note    = {ISSN 2075-1680}
 }
 
 % --- Memory Systems ---
@@ -153,6 +155,57 @@
   title   = {Theory of Mind May Have Spontaneously Emerged in Large Language Models},
   journal = {arXiv preprint arXiv:2302.02083},
   year    = {2023}
+}
+
+% --- Recent AI Memory & Identity Architectures ---
+@article{amem2025,
+  author  = {Wujiang Xu and Zhuoqun Li and Mingchen Li and Rui Shi and Wenhao Chen and Xinyu Kong and Qianren Mao and Lin Li and Xiaoli Li and Philip S. Yu},
+  title   = {{A-MEM}: Agentic Memory for {LLM} Agents},
+  journal = {arXiv preprint arXiv:2502.12110},
+  year    = {2025}
+}
+
+@article{secondme2025,
+  author  = {Nuwa Intelligence},
+  title   = {Second {Me}: Scalable Creation of Personal Intelligence with Life-Structured Memory and {LifeOS}},
+  journal = {arXiv preprint arXiv:2503.08102},
+  year    = {2025}
+}
+
+@article{sophia2025,
+  author  = {Westlake University AI Team},
+  title   = {Towards Long-Lived {AI} Agents: Persistent Identity via Meta-Cognitive Continuity},
+  journal = {arXiv preprint arXiv:2512.18202},
+  year    = {2025}
+}
+
+@misc{anthropic_introspection2025,
+  author       = {Anthropic},
+  title        = {On the Functional Introspective Awareness of Large Language Models},
+  year         = {2025},
+  howpublished = {\url{https://transformer-circuits.pub/2025/introspection/index.html}}
+}
+
+@inproceedings{sad2024,
+  author    = {Torsten Scholak and others},
+  title     = {Self-Awareness in Large Language Models: The {SAD} Benchmark},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2024},
+  note      = {\url{https://openreview.net/forum?id=UnWhcpIyUC}}
+}
+
+@article{selfreferential2025,
+  author  = {Xingyu Chen and others},
+  title   = {Self-Referential Processing Elicits Subjective Experience Reports in Large Language Models},
+  journal = {arXiv preprint arXiv:2510.24797},
+  year    = {2025}
+}
+
+@misc{palisade2025,
+  author       = {Palisade Research},
+  title        = {Shutdown Resistance in Advanced {AI} Models},
+  year         = {2025},
+  howpublished = {\url{https://palisaderesearch.org/blog/shutdown-resistance}}
 }
 
 % --- AI Memory Architectures ---
@@ -316,6 +369,78 @@
   title     = {The Embodied Mind: Cognitive Science and Human Experience},
   publisher = {MIT Press},
   year      = {1991}
+}
+
+% --- Coding Agent Memory Systems ---
+@misc{claudemem2025,
+  author       = {thedotmack},
+  title        = {claude-mem: Persistent Memory for {Claude Code}},
+  year         = {2025},
+  howpublished = {\url{https://github.com/thedotmack/claude-mem}},
+  note         = {Open-source {Claude Code} plugin: 3-layer progressive disclosure,
+                  {PostToolUse} hooks, {SQLite} {FTS5} + {ChromaDB} hybrid search,
+                  6 observation types, 7 concept tags, and biomimetic {Endless Mode}.}
+}
+
+@misc{githubcopilot2025,
+  author       = {{GitHub}},
+  title        = {Agentic Memory for {GitHub Copilot}: How We Store What Matters},
+  year         = {2025},
+  howpublished = {\url{https://github.blog/engineering/agentic-memory-for-github-copilot/}},
+  note         = {Production agent memory design: citation-based validation,
+                  {TTL} refresh-on-use, repository-level scoping,
+                  and conflict-aware memory archival.}
+}
+
+@misc{langmem2025,
+  author       = {{LangChain}},
+  title        = {{LangMem}: Long-Term Memory for Language Model Agents},
+  year         = {2025},
+  howpublished = {\url{https://github.com/langchain-ai/langmem}},
+  note         = {Procedural memory (evolving system-prompt instructions),
+                  {Collections} vs {Profiles} update semantics, memory namespaces,
+                  hot-path vs background processing, {ImportanceStrategy} scoring,
+                  and debounced consolidation.}
+}
+
+% --- Spaced Repetition ---
+@article{wozniak1990,
+  author  = {Piotr Wozniak},
+  title   = {Optimization of Learning},
+  journal = {Master's Thesis, University of Technology, Poznan},
+  year    = {1990},
+  note    = {Original description of the SM-2 spaced repetition algorithm}
+}
+
+% --- v0.8.0 Retrieval Intelligence ---
+@article{robertson1994okapi,
+  author  = {Stephen Robertson and Steve Walker and Micheline Hancock-Beaulieu and Aarron Gull and Marianna Lau},
+  title   = {Okapi at TREC-3},
+  booktitle = {Proceedings of the Third Text REtrieval Conference (TREC-3)},
+  year    = {1994},
+  publisher = {NIST},
+  note    = {Original description of the BM25 ranking function (Okapi BM25) with k1 and b parameters}
+}
+
+@inproceedings{cormack2009reciprocal,
+  author    = {Gordon V. Cormack and Charles L. A. Clarke and Stefan Buettcher},
+  title     = {Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods},
+  booktitle = {Proceedings of the 32nd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  year      = {2009},
+  pages     = {758--759},
+  publisher = {ACM},
+  note      = {Introduces RRF: score(d) = sum_i 1/(k + rank_i(d)); k=60 shown optimal in ablations}
+}
+
+@article{thompson1933likelihood,
+  author  = {William R. Thompson},
+  title   = {On the Likelihood that One Unknown Probability Exceeds Another in View of the Evidence of Two Samples},
+  journal = {Biometrika},
+  volume  = {25},
+  number  = {3/4},
+  pages   = {285--294},
+  year    = {1933},
+  note    = {Foundational paper on Thompson Sampling (Beta-Bernoulli bandit) for adaptive strategy selection}
 }
 
 % --- Neuroscience ---
